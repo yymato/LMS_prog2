@@ -15,6 +15,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.do_paint = False
         self.pushButton.clicked.connect(self.paint)
         # Обратите внимание: имя элемента такое же как в QTDesigner
+        # вносим изменения в мастер ветку
 
     def paintEvent(self, event):
         if self.do_paint:
